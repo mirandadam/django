@@ -2,6 +2,29 @@
 Django 2.2.29postsupport release notes
 ======================================
 
+
+July 4, 2022
+CVE-2022-34265: Potential SQL injection via ``Trunc(kind)`` and ``Extract(lookup_name)`` arguments
+==================================================================================================
+
+:class:`Trunc() <django.db.models.functions.Trunc>` and
+:class:`Extract() <django.db.models.functions.Extract>` database functions were
+subject to SQL injection if untrusted data was used as a
+``kind``/``lookup_name`` value.
+
+Applications that constrain the lookup name and kind choice to a known safe
+list are unaffected.
+ `Full description
+<https://www.djangoproject.com/weblog/2022/jul/04/security-releases/>`__
+
+* Django 4.0 :commit:`(patch) <0dc9c016fadb71a067e5a42be30164e3f96c0492>`
+* Django 3.2 :commit:`(patch) <a9010fe5555e6086a9d9ae50069579400ef0685e>`
+* Backported to 2.2.29postsupport in Nov 10, 2022
+https://github.com/mirandadam/django/commit/a9010fe5555e6086a9d9ae50069579400ef0685e
+
+
+
+
 *Aug 3, 2022*
 
 Django 3.2.15 fixes a security issue with severity "high" in 3.2.14.
