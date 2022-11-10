@@ -1,6 +1,6 @@
 from django.utils.version import get_version
 
-VERSION = (2, 2, 29, 'alpha', 0)
+VERSION = (2, 2, 29, 'postsupport', 0)
 
 __version__ = get_version(VERSION)
 
