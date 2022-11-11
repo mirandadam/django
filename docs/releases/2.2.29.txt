@@ -1,5 +1,5 @@
 ============================
-Django 2.2.29u release notes
+Django 2.2.29a release notes
 ============================
 
 ***This is a backport on a branch of Django that is no longer supported.***
@@ -20,7 +20,7 @@ list are unaffected.
 
 * Django 4.0 :commit:`(patch) <0dc9c016fadb71a067e5a42be30164e3f96c0492>`
 * Django 3.2 :commit:`(patch) <a9010fe5555e6086a9d9ae50069579400ef0685e>`
-* Backported to 2.2.29_unsupported in Nov 10, 2022
+* Backported to 2.2.29a (unsupported) in Nov 10, 2022
 https://github.com/mirandadam/django/commit/a9010fe5555e6086a9d9ae50069579400ef0685e
 
 
@@ -32,7 +32,7 @@ Django 3.2.15 fixes a security issue with severity "high" in 3.2.14.
 Django 4.0.7 fixes a security issue with severity "high" in 4.0.6.
 
 *Nov 10, 2022
-Django 2.2.29_unsupported fixes a security issue with severity "high" in 2.2.28.
+Django 2.2.29a (unsupported) fixes a security issue with severity "high" in 2.2.28.
 
 CVE-2022-36359: Potential reflected file download vulnerability in ``FileResponse``
 ===================================================================================
