@@ -103,6 +103,6 @@ class FileResponseTests(SimpleTestCase):
                 )
                 response.close()
                 self.assertEqual(
-                    response.headers["Content-Disposition"],
+                    response["Content-Disposition"],
                     f'attachment; filename="{escaped}"',
                 )

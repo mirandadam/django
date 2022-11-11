@@ -9,7 +9,7 @@ from django.db import NotSupportedError, transaction
 from django.db.backends import utils
 from django.utils import timezone
 from django.utils.encoding import force_text
-from django.core import _lazy_re_compile
+from django.core.validators import _lazy_re_compile
 
 
 class BaseDatabaseOperations:
